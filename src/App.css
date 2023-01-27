@@ -7,9 +7,31 @@
   pointer-events: none;
 }
 
+.App-logo1 {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.App-logo2 {
+  height: 20vmin;
+  pointer-events: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo1 {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo2 {
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
@@ -30,9 +52,27 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateX(0deg) rotateY(180deg) rotateZ(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateX(360deg) rotateY(90deg) rotateZ(180deg);
+  }
+}
+
+@keyframes App-logo1-spin {
+  from {
+    transform: rotateX(100deg) rotateY(50deg) rotateZ(30deg);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(40deg) rotateZ(80deg);
+  }
+}
+
+@keyframes App-logo2-spin {
+  from {
+    transform: rotateX(90deg) rotateY(10deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(290deg) rotateZ(10deg);
   }
 }
